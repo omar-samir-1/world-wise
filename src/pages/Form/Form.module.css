@@ -1,0 +1,279 @@
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e5bf34;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b99100;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid #ffffff;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////// */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.formWithoutButtons {
+  background-color: rgb(72, 72, 72);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  overflow: auto;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+}
+
+.label {
+  word-wrap: break-word;
+  width: 100%;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+input:focus {
+  outline: none;
+}
+
+.buttons button {
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+}
+
+.buttons button:first-child {
+  background-color: green;
+}
+.buttons button:first-child:hover {
+  background-color: darkgreen;
+}
+
+.buttons button:last-child:hover {
+  background-color: rgb(152, 152, 152);
+}
+
+/* old very small phones */
+@media (max-width: 320px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .formWithoutButtons {
+    width: 250px;
+    height: 100px;
+    padding: 7px;
+    gap: 10px;
+  }
+  .formWithoutButtons .entry label,
+  .formWithoutButtons .entry input {
+    font-size: 10px;
+  }
+  .buttons button {
+    width: 70px;
+    height: 18px;
+    font-size: 12px;
+  }
+}
+
+/* Mobile (Small Screens) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .formWithoutButtons {
+    width: 250px;
+    height: 100px;
+    padding: 7px;
+    gap: 10px;
+  }
+  .formWithoutButtons .entry label,
+  .formWithoutButtons .entry input {
+    font-size: 10px;
+  }
+  .buttons {
+    max-width: 320px;
+  }
+  .buttons button {
+    width: 70px;
+    height: 18px;
+    font-size: 12px;
+  }
+}
+
+/* Mobile (Medium Screens) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .formWithoutButtons {
+    width: 300px;
+    height: 100px;
+    padding: 7px;
+    gap: 10px;
+  }
+  .formWithoutButtons .entry label,
+  .formWithoutButtons .entry input {
+    font-size: 11px;
+  }
+  .buttons {
+    max-width: 380px;
+    height: 21px;
+  }
+  .buttons button {
+    width: 76px;
+    height: 19px;
+    font-size: 12.5px;
+  }
+}
+
+/* Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  ::-webkit-scrollbar {
+    width: 9px;
+  }
+
+  .formWithoutButtons {
+    width: 250px;
+
+    height: 200px;
+    padding: 18px 9px;
+    padding-bottom: 21px;
+    gap: 10px;
+    border-radius: 15px;
+  }
+  .formWithoutButtons .entry label,
+  .formWithoutButtons .entry input {
+    font-size: 11px;
+  }
+  .entry {
+    gap: 5px;
+  }
+  .buttons {
+    max-width: 320px;
+    height: 21px;
+  }
+  .buttons button {
+    width: 80px;
+    height: 20px;
+    font-size: 13px;
+  }
+}
+
+/* Tablet (Landscape) / Small Laptops */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  ::-webkit-scrollbar {
+    width: 9px;
+  }
+  .form {
+    gap: 15px;
+  }
+  .formWithoutButtons {
+    width: 280px;
+    height: 240px;
+    padding: 18px 9px;
+    padding-bottom: 23px;
+    gap: 10px;
+    border-radius: 15px;
+  }
+  .formWithoutButtons .entry label,
+  .formWithoutButtons .entry input {
+    font-size: 13px;
+  }
+  .entry {
+    gap: 5px;
+  }
+  .buttons {
+    max-width: 320px;
+    height: 22px;
+  }
+  .buttons button {
+    width: 85px;
+    height: 25px;
+    font-size: 15px;
+  }
+}
+/* Desktop (Large Screens) */
+@media only screen and (min-width: 1200px) {
+  ::-webkit-scrollbar {
+    width: 9px;
+  }
+  .form {
+    gap: 15px;
+  }
+  .formWithoutButtons {
+    width: 280px;
+    height: 240px;
+    padding: 18px 9px;
+    padding-bottom: 23px;
+    gap: 10px;
+    border-radius: 15px;
+  }
+  .formWithoutButtons .entry label,
+  .formWithoutButtons .entry input {
+    font-size: 14px;
+  }
+  .entry {
+    gap: 5px;
+  }
+  .buttons {
+    max-width: 330px;
+    height: 22px;
+  }
+  .buttons button {
+    width: 90px;
+    height: 28px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,156 @@
+.container {
+  display: flex;
+
+  justify-content: flex-end;
+  min-width: 20%;
+}
+
+.btnsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+}
+.log,
+.reg {
+  color: black;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reg,
+.log {
+  width: 100%;
+}
+.log:hover,
+.reg:hover {
+  transform: scale(1.1);
+}
+
+.log {
+  background-color: green;
+}
+.clear {
+  text-decoration: none;
+  width: 100%;
+}
+
+/* old very small phones */
+@media (max-width: 320px) {
+  .container {
+    align-items: flex-start;
+    padding-top: 4px;
+  }
+  .btnsContainer {
+    flex-direction: column;
+    gap: 6px;
+    height: 45px;
+  }
+  .reg,
+  .log {
+    padding: 6px;
+    font-size: 10px;
+    height: 17px;
+    min-width: 67px;
+  }
+}
+
+/* Mobile (Small Screens) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .container {
+    padding-top: 4px;
+    align-items: flex-start;
+  }
+  .btnsContainer {
+    gap: 6px;
+    height: 45px;
+  }
+  .reg,
+  .log {
+    font-size: 10px;
+
+    padding: 6px;
+    height: 19px;
+    min-width: 75px;
+  }
+}
+
+/* Mobile (Medium Screens) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .container {
+    padding-top: 8px;
+    align-items: flex-start;
+  }
+  .btnsContainer {
+    gap: 6px;
+    height: 45px;
+  }
+  .reg,
+  .log {
+    padding: 6px;
+    font-size: 12px;
+    height: 21px;
+    min-width: 85px;
+  }
+}
+/* Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    padding-top: 5px;
+    align-items: center;
+  }
+  .btnsContainer {
+    gap: 8px;
+    height: 50px;
+  }
+  .reg,
+  .log {
+    padding: 6px;
+    font-size: 12.5px;
+    height: 25px;
+    min-width: 95px;
+  }
+}
+/* Tablet (Landscape) / Small Laptops */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    padding-top: 5px;
+    align-items: center;
+  }
+  .btnsContainer {
+    gap: 8px;
+    height: 55px;
+  }
+  .reg,
+  .log {
+    font-size: 13px;
+
+    padding: 8px;
+    min-width: 105px;
+    height: 25px;
+  }
+}
+
+/* Desktop (Large Screens) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding-top: 2px;
+    align-items: center;
+  }
+  .btnsContainer {
+    gap: 9px;
+    height: 55px;
+  }
+  .reg,
+  .log {
+    font-size: 0.9rem;
+    height: 32px;
+    padding: 9px;
+    min-width: 115px;
+  }
+}

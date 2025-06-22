@@ -1,0 +1,288 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  background-color: rgb(64, 73, 73);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.subContainer {
+  height: 100vh;
+  width: 100%;
+  max-height: 1000px;
+  max-width: 1440px;
+  display: grid;
+  grid-template-rows: 23% 75%;
+  gap: 2%;
+  grid-template-columns: 100%;
+}
+
+.headerContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.text {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.text h1,
+.text p {
+  text-align: center;
+}
+
+.imgContainer {
+  width: 33%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.img {
+  transition: filter 1s ease-in-out, opacity 0.7s ease-in-out;
+  filter: blur(16px);
+  opacity: 0.7;
+  border-radius: 20px;
+}
+
+.imgWithoutBlur {
+  filter: blur(0);
+  opacity: 1;
+}
+/* old very small phones */
+@media (max-width: 320px) {
+  .header {
+    padding: 10px;
+    padding-bottom: 0;
+    gap: 1%;
+    height: inherit;
+  }
+  .navBar1 {
+    display: none;
+  }
+  .content {
+    gap: 20px;
+  }
+
+  .text {
+    width: 40%;
+    height: 45%;
+    gap: 5px;
+  }
+  .text h1 {
+    font-size: 15px;
+  }
+
+  .text p {
+    font-size: 10px;
+  }
+  .img {
+    transition: filter 1s ease-in-out, opacity 0.7s ease-in-out;
+    width: 124px;
+    height: 185px;
+  }
+}
+/* Mobile (Small Screens) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .header {
+    padding: 10px;
+    padding-bottom: 0;
+    gap: 1%;
+    height: inherit;
+  }
+  .navBar1 {
+    display: none;
+  }
+  .content {
+    gap: 20px;
+  }
+
+  .text {
+    width: 40%;
+    height: 45%;
+    gap: 5px;
+  }
+  .text h1 {
+    font-size: 16px;
+  }
+
+  .text p {
+    font-size: 11px;
+    width: 75%;
+  }
+  .img {
+    transition: filter 1s ease-in-out, opacity 0.7s ease-in-out;
+    width: 132px;
+    height: 195px;
+  }
+}
+
+/* Mobile (Medium Screens) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .header {
+    padding: 10px;
+    padding-bottom: 0;
+    gap: 1%;
+    height: inherit;
+  }
+  .navBar1 {
+    display: none;
+  }
+  .content {
+    gap: 20px;
+  }
+
+  .text {
+    width: 40%;
+    height: 45%;
+    gap: 5px;
+  }
+  .text h1 {
+    font-size: 17px;
+  }
+
+  .text p {
+    font-size: 12px;
+    width: 75%;
+  }
+  .img {
+    transition: filter 1s ease-in-out, opacity 0.7s ease-in-out;
+    width: 147px;
+    height: 213px;
+  }
+}
+
+/* Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header {
+    padding: 15px;
+    padding-bottom: 0;
+    gap: 1%;
+  }
+  .navBar2 {
+    display: none;
+  }
+  .content {
+    gap: 10px;
+  }
+
+  .text {
+    width: 40%;
+    height: 45%;
+    gap: 5px;
+  }
+  .text h1 {
+    font-size: 19px;
+  }
+
+  .text p {
+    font-size: 14px;
+    width: 80%;
+  }
+  .img {
+    transition: filter 1s ease-in-out, opacity 0.7s ease-in-out;
+    width: 164px;
+    height: 230px;
+  }
+}
+
+/* Tablet (Landscape) / Small Laptops */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .header {
+    padding: 15px;
+    padding-bottom: 0;
+    gap: 1%;
+  }
+  .navBar2 {
+    display: none;
+  }
+  .content {
+    gap: 5px;
+  }
+
+  .text {
+    width: 40%;
+    height: 45%;
+    gap: 5px;
+  }
+  .text h1 {
+    font-size: 23px;
+  }
+
+  .text p {
+    font-size: 16px;
+    width: 80%;
+  }
+  .img {
+    transition: filter 1s ease-in-out, opacity 0.7s ease-in-out;
+    width: 192px;
+    height: 267px;
+  }
+}
+
+/* Desktop (Large Screens) */
+@media only screen and (min-width: 1200px) {
+  .header {
+    padding: 20px;
+    padding-bottom: 0;
+    gap: 1%;
+  }
+  .navBar2 {
+    display: none;
+  }
+  .content {
+    gap: 5px;
+  }
+
+  .text {
+    width: 50%;
+    height: 50%;
+    gap: 5px;
+  }
+  .text h1 {
+    font-size: 26px;
+  }
+
+  .text p {
+    font-size: 17px;
+    width: 70%;
+  }
+  .img {
+    transition: filter 1s ease-in-out, opacity 0.7s ease-in-out;
+    width: 253px;
+    height: 322px;
+  }
+}

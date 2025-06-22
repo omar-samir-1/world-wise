@@ -1,0 +1,138 @@
+.popUp {
+  word-wrap: break-word;
+  overflow-y: auto;
+}
+
+.container {
+  position: relative;
+}
+
+.location {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: #4caf50; /* A more elegant green */
+  color: white;
+
+  border: none;
+  border-radius: 40%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location:hover {
+  background-color: #388e3c;
+  transform: translateX(-50%) scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.tempMarker {
+  display: none;
+}
+
+/* old very small phones */
+@media (max-width: 320px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .location {
+    padding: 6px 8px;
+    font-size: 10px;
+  }
+  .popUp {
+    font-size: 11px;
+    height: 50px;
+    width: 130px;
+  }
+}
+/* Mobile (Small Screens) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .location {
+    padding: 6px 8px;
+    font-size: 10px;
+  }
+  .popUp {
+    font-size: 11px;
+    height: 50px;
+    width: 130px;
+  }
+}
+
+/* Mobile (Medium Screens) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .location {
+    padding: 7px 9px;
+    font-size: 12px;
+  }
+  .popUp {
+    font-size: 12px;
+    height: 50px;
+    width: 130px;
+  }
+}
+
+/* Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .location {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+  .popUp {
+    font-size: 13px;
+    max-height: 120px;
+    max-width: 200px;
+  }
+}
+
+/* Tablet (Landscape) / Small Laptops */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .location {
+    padding: 9px 13px;
+    font-size: 15px;
+  }
+  .popUp {
+    font-size: 14px;
+    max-height: 120px;
+    max-width: 250px;
+  }
+}
+
+/* Desktop (Large Screens) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .location {
+    padding: 11px 15px;
+    font-size: 19px;
+  }
+  .popUp {
+    font-size: 15px;
+    max-height: 130px;
+    max-width: 260px;
+  }
+}

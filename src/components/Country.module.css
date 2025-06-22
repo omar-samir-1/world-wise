@@ -1,0 +1,122 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(176, 168, 168);
+  justify-content: space-around;
+  align-items: center;
+  border-left: 6px yellow solid;
+  border-radius: 10px;
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 3px;
+  height: 100%;
+  width: 100%;
+}
+.container:hover {
+  background-color: rgb(208, 208, 208);
+}
+.image {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.countryName {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* old very small phones */
+@media (max-width: 320px) {
+  .container {
+    width: 100px;
+    min-height: 46px;
+    height: fit-content;
+  }
+  .image {
+    width: 22px;
+    height: 11px;
+  }
+  .countryName {
+    font-size: 11px;
+  }
+}
+/* Mobile (Small Screens) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .container {
+    width: 110px;
+    min-height: 46px;
+    height: fit-content;
+  }
+  .image {
+    width: 22px;
+    height: 11px;
+  }
+  .countryName {
+    font-size: 11px;
+  }
+}
+
+/* Mobile (Medium Screens) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .container {
+    width: 100px;
+    min-height: 46px;
+    height: fit-content;
+  }
+  .image {
+    width: 22px;
+    height: 11px;
+  }
+  .countryName {
+    font-size: 12px;
+  }
+}
+
+/* Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 130px;
+    min-height: 46px;
+    height: fit-content;
+  }
+  .image {
+    width: 26px;
+    height: 13px;
+  }
+  .countryName {
+    font-size: 12px;
+  }
+}
+
+/* Tablet (Landscape) / Small Laptops */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 140px;
+    min-height: 46px;
+    height: fit-content;
+  }
+  .image {
+    width: 30px;
+    height: 16px;
+  }
+  .countryName {
+    font-size: 14px;
+  }
+}
+
+/* Desktop (Large Screens) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 150px;
+    min-height: 46px;
+    height: fit-content;
+  }
+  .image {
+    width: 40px;
+    height: 22px;
+  }
+  .countryName {
+    font-size: 15px;
+  }
+}

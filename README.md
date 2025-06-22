@@ -97,5 +97,5 @@ npm start
 I'm Omar Samir, a frontend developer passionate about building interactive web experiences.
 
 - [LinkedIn](https://www.linkedin.com/in/omarsamir1/)
-- [Gmail](omarsamir19971@gmail.com)
+- Gmail : [omarsamir19971@gmail.com](mailto:omarsamir19971@gmail.com)
 - [GitHub](https://github.com/omar-samir-1)

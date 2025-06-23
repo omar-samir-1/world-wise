@@ -10,11 +10,11 @@
 
 # World Wise 🌍
 
-**World Wise** is a travel tracking web application that lets users visually map and manage their travel experiences around the world. With an interactive map interface, you can mark cities you've visited, add detailed trip information, and see your adventures come to life.
+**World Wise** is a responsive travel tracking web application that lets users visually map and manage their travel experiences around the world. With an interactive map interface, you can mark cities you've visited, add detailed trip information, and see your adventures come to life.
 
 The app provides a smooth and intuitive experience for logging trips, including the ability to specify the location, date, and description of each journey. Trips are displayed as pins on a world map and listed separately in both a **visited cities list** and a **visited countries list** — helping you keep track of your travels at a glance.
 
-Whether you're a frequent traveler or planning your future destinations, World Wise makes it easy to organize and reflect on your global adventures, all within a sleek and responsive interface.
+Users can create an account and log in securely to personalize their experience. Each account allows for saving, updating, and viewing individual travel histories .
 
 ## 🔗 Live Demo
 
@@ -59,7 +59,7 @@ Whether you're a frequent traveler or planning your future destinations, World W
 ## 🛠 Tech Stack
 
 - **React** – Frontend UI library
-- **React Router DOM** – Client-side routing
+- **React Router DOM v5** – Client-side routing
 - **Leaflet** & **React-Leaflet** – Interactive maps
 - **React Datepicker** – Trip date selection
 - **React Icons** – Interface icons
@@ -72,7 +72,7 @@ Whether you're a frequent traveler or planning your future destinations, World W
 
 - **Firebase** – Authentication / data
 - **Create React App** – Project bootstrapping
-- **Netlify** – Deployment and hosting
+- **ESLint** – Linting and code quality
 
 ## 🛠 Getting Started
 

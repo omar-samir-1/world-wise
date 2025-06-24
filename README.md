@@ -39,6 +39,7 @@ Users can create an account and log in securely to personalize their experience.
 - Interactive world map powered by **Leaflet**
 - Clickable map with popup forms to add new trips
 - Add trip details (location, date, description)
+- Fetch and update city data using a RESTful API
 - View list of added trips and visited countries
 - Responsive, mobile-friendly design
 
@@ -64,6 +65,7 @@ Users can create an account and log in securely to personalize their experience.
 - **React Datepicker** – Trip date selection
 - **React Icons** – Interface icons
 - **Context API + useReducer** – UI state management
+- **RESTful APIs**
 - **localStorage API** – For storing trip data in the browser
   Simulated backend using `localStorage`:
   - Trip data is stored locally in the browser
